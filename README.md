@@ -1,10 +1,10 @@
 ## 🕹️Jogo em Python
 
-![Screen](https://github.com/Dr4ux0/Game-Snuck-Color/blob/Imagens/SmartSelect_20240409_104502_Termux.jpg)
+![Screen](https://github.com/Dr4ux0/Betfy-Color/blob/Imagens/SmartSelect_20240409_104502_Termux.jpg)
 
 ## 📃Descrição
 
-* Snuck é um jogo simples de apostas em que você tenta a sorte escolhendo uma cor e fazendo uma aposta. 
+* Betfy é um jogo simples de apostas em que você tenta a sorte escolhendo uma cor e fazendo uma aposta. 
 
 ## ✅Objetivo
 
@@ -16,7 +16,7 @@
 
 ## Como Jogar
 
-* Execute o arquivo `snuck.py`.
+* Execute o arquivo `betfy.py`.
 * Siga as instruções para fazer uma aposta e escolher uma cor.
 * Aguarde a cor sorteada.
 * Se acertar, seu saldo aumenta. Se errar, seu saldo diminui.
@@ -38,13 +38,13 @@ apt update && apt upgrade -y && apt install git python
 
 
 ```bash
-git clone https://github.com/Dr4ux0/Game-Snuck-Color
+git clone https://github.com/Dr4ux0/Betfy-Color
 ```
 
 * Executar o arquivo
 
 ```bash
-python snuck.py
+python betfy.py
 ```
 
 * Divirta-se jogando Snuck e boa sorte!
