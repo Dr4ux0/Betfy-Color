@@ -6,7 +6,7 @@ def clear_screen():
     os.system('clear')
 
 def welcome_message():
-    print('\033[1mBEM-VINDO AO SNUCK!!\n\nAPOSTE NA COR E TENTE A SORTE\033[m.')
+    print('\033[1mBEM-VINDO AO BETFY!!\n\nAPOSTE NA COR E TENTE A SORTE\033[m.')
     sleep(1)
     print('Seu saldo é de \033[1;32mR$25,00\033[m no início do jogo.\n')
     sleep(2)
@@ -63,7 +63,7 @@ def play_again(saldo):
             return False
         print('\033[1;31mOPÇÃO INVÁLIDA\033[m')
 
-def snuck_game():
+def betfy_game():
     clear_screen()
     welcome_message()
 
@@ -106,4 +106,4 @@ def snuck_game():
             if not saldo:
                 break
 
-snuck_game()
+betfy_game()
