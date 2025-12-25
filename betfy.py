@@ -1,9 +1,14 @@
+
 import os
 import random
+import platform
 from time import sleep
 
 def clear_screen():
-    os.system('clear')
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
 
 def welcome_message():
     print('\033[1mBEM-VINDO AO BETFY!!\n\nAPOSTE NA COR E TENTE A SORTE\033[m.')
@@ -37,7 +42,7 @@ def print_color_sorteada(cor_sorteada):
     print('\033[1;36m\nA COR SORTEADA FOI\033[m', end='')
     for _ in range(3):
         print('\033[1;36m.\033[m', end='', flush=True)
-        sleep(2)
+        sleep(1.5)
     print('\n{}'.format(cor_sorteada))
 
 def play_again(saldo):
@@ -90,10 +95,10 @@ def betfy_game():
         print_color_sorteada(cor_sorteada)
 
         if cor_sorteada == opcoes[escolha-1]:
-            print('\033[1;32m\nACERTO!! Parabéns você acertou\033[m')
+            print('\033[1;32m\nACERTOU!! Parabéns você acertou\033[m')
             saldo += aposta
         else:
-            print('\033[1;31m\nERRO!! Infelizmente você errou\033[m')
+            print('\033[1;31m\nERROU!! Infelizmente você errou\033[m')
             saldo -= aposta
 
         print('\nCORES SORTEADAS: ', end=' ')
